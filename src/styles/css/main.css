@@ -105,4 +105,25 @@ table {
 
 input {
   border-radius: 0;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #20da7d;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  background: linear-gradient(110deg, rgb(20, 19, 20) 46%, rgb(6, 10, 38) 95%);
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
