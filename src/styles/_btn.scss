@@ -1,0 +1,48 @@
+.btns {
+  @include transition();
+
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  margin: $m-4;
+
+  text-decoration: none;
+  line-height: 45px;
+  border-radius: 45px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  font-size: $font-12;
+  font-weight: $font-w-500;
+
+  color: $color-white;
+  background-color: $color-white;
+  box-shadow: 0 8px 15px $box-shadow-third;
+
+  cursor: pointer;
+  z-index: 20;
+
+  &:hover {
+    @include filter();
+
+    color: $color-white;
+    box-shadow: 0 5px 15px $box-shadow-second;
+    text-decoration: none;
+
+    transform: translateY(-3px);
+  }
+
+  &__add {
+    background: $color-green;
+  }
+
+  &__up {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+
+    &_hide {
+      display: none;
+    }
+  }
+}

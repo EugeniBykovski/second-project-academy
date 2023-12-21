@@ -1,0 +1,47 @@
+.navbar {
+  flex-direction: column;
+
+  &__lists {
+    @include flex();
+    width: 100%;
+
+    &_footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__list {
+    @include transition();
+    @include flex();
+
+    padding: $p-1-5;
+
+    &:hover {
+      transform: translateY(-3px);
+      filter: blur(1px);
+    }
+  }
+
+  &__link {
+    @include transition();
+
+    position: relative;
+    padding: $p-0-5 0;
+
+    text-decoration: none;
+    line-height: 30px;
+    color: $color-white;
+    font-size: $font-13;
+
+    &:hover {
+      color: $color-green;
+      text-decoration: none;
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  left: 5rem;
+}
